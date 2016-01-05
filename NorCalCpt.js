@@ -205,23 +205,23 @@ function CPT(grade, secondLowest, min, overall, gender, category){
     if(grade == "9th Grade" && gender == "Male"){
 
         if(category =="Freshman Boys"){ 
-            if(secondLowest <= 0.2){
+            if(secondLowest <= 0.1){
                 FSGlobal.$CPT.val("JV Boys");
-            }else if(min <= 0.2 && overall  <= 0.2){
+            }else if(min <= 0.1 && overall  <= 0.1){
                 FSGlobal.$CPT.val("JV Boys");
             }else{FSGlobal.$CPT.val("Sophomore Boys");};
         }else if(category == "Sophomore Boys"){
-            if(secondLowest <= 0.1){
+            if(secondLowest <= 0.05){
                 FSGlobal.$CPT.val("Varisty Boys");
-            }else if(min <= 0.1 && overall <= 0.1){
+            }else if(min <= 0.05 && overall <= 0.05){
                 FSGlobal.$CPT.val("Varisty Boys");
             }else{
                 FSGlobal.$CPT.val("Sophomore Boys"); //NOT SUREON THIS ONE, SHOULD IT BE JV>  
             }
         }else if(category =="JV Boys"){
-            if(secondLowest <= 0.3){
+            if(secondLowest <= 0.15){
                 FSGlobal.$CPT.val("Varisty Boys");
-            }else if(min <= 0.3 && overall <= 0.3){
+            }else if(min <= 0.15 && overall <= 0.15){
                 FSGlobal.$CPT.val("Varisty Boys");
             }else{
                 FSGlobal.$CPT.val("JV Boys");
@@ -234,17 +234,17 @@ function CPT(grade, secondLowest, min, overall, gender, category){
        if(category =="Freshman Boys"){
          FSGlobal.$CPT.val("Data Entry error:  You cannot have been a 10th Grader racing in the Freshman Category");
        }else if(category == "Sophomore Boys"){
-            if(secondLowest <= 0.1){
+            if(secondLowest <= 0.05){
                 FSGlobal.$CPT.val("Varisty Boys");
-            }else if(min <= 0.1 && overall <= 0.1){
+            }else if(min <= 0.05 && overall <= 0.05){
                 FSGlobal.$CPT.val("Varisty Boys");
             }else{
                 FSGlobal.$CPT.val("JV Boys"); //NOT SUREON THIS ONE, SHOULD IT BE JV>  
             }
         }else if(category =="JV Boys"){
-            if(secondLowest <= 0.3){
+            if(secondLowest <= 0.15){
                 FSGlobal.$CPT.val("Varisty Boys");
-            }else if(min <= 0.3 && overall <= 0.3){
+            }else if(min <= 0.15 && overall <= 0.15){
                 FSGlobal.$CPT.val("Varisty Boys");
             }else{
                 FSGlobal.$CPT.val("JV Boys");
@@ -255,9 +255,9 @@ function CPT(grade, secondLowest, min, overall, gender, category){
     if(grade == "11th Grade" && gender == "Males"){ //can't be 11th grade and race SOPHOMORE
 
         if(category =="JV Boys"){
-            if(secondLowest <= 0.3){
+            if(secondLowest <= 0.15){
                 FSGlobal.$CPT.val("Varisty Boys");
-            }else if(min <= 0.3 && overall <= 0.3){
+            }else if(min <= 0.15 && overall <= 0.15){
                 FSGlobal.$CPT.val("Varisty Boys");
             }else{
                 FSGlobal.$CPT.val("JV Boys");
